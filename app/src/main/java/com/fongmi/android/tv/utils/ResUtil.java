@@ -1,5 +1,8 @@
 package com.fongmi.android.tv.utils;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -20,12 +23,24 @@ public class ResUtil {
         return App.get().getResources().getDisplayMetrics();
     }
 
+    public static int getScreenWidthPx(Context context) {
+        return context.getResources().getDisplayMetrics().widthPixels;
+    }
+
     public static int getScreenWidthPx() {
         return getDisplayMetrics().widthPixels;
     }
 
     public static int getScreenHeightPx() {
         return getDisplayMetrics().heightPixels;
+    }
+
+    public static boolean isLand(Activity activity) {
+        return activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+    }
+
+    public static boolean isPort(Activity activity) {
+        return activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
     }
 
     public static int getEms() {

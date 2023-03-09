@@ -5,20 +5,15 @@ let current_file = '';
 let current_parent = '';
 
 function search() {
-    doAction('search', { text: $('#keyword').val() });
-}
-
-function update() {
-    doAction('update', { text: "dev" });
-    $('#update').attr("disabled", true);
+    doAction('search', { word: $('#keyword').val() });
 }
 
 function push() {
-    doAction('push', { text: $('#push_url').val() });
+    doAction('push', { url: $('#push_url').val() });
 }
 
 function api() {
-    doAction('api', { text: $('#api_url').val() });
+    doAction('api', { url: $('#api_url').val() });
 }
 
 function doAction(action, kv) {
@@ -79,7 +74,7 @@ function selectFile(path, canDel) {
 }
 
 function fileToApi() {
-    doAction('api', { text: "file://" + current_file });
+    doAction('api', { url: "file://" + current_file });
     hideFileInfo();
 }
 

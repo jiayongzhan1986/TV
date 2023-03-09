@@ -17,8 +17,8 @@ public class CustomScroller extends RecyclerView.OnScrollListener {
 
     @Override
     public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-        if (isLoading() || recyclerView.getScrollState() == RecyclerView.SCROLL_STATE_IDLE) return;
-        if (!recyclerView.canScrollVertically(1) && dy > 0 && callback != null) callback.onLoadMore(String.valueOf(++page));
+        if (isLoading() || recyclerView.getScrollState() == RecyclerView.SCROLL_STATE_IDLE || callback == null) return;
+        if (!recyclerView.canScrollVertically(1) && dy > 0) callback.onLoadMore(String.valueOf(++page));
     }
 
     public void reset() {

@@ -1,6 +1,7 @@
 package com.fongmi.android.tv.ui.adapter;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -16,10 +17,16 @@ public class SiteAdapter extends RecyclerView.Adapter<SiteAdapter.ViewHolder> {
 
     private final OnClickListener mListener;
     private final List<Site> mItems;
+    private boolean search;
 
     public SiteAdapter(OnClickListener listener) {
         this.mListener = listener;
         this.mItems = ApiConfig.get().getSites();
+    }
+
+    public SiteAdapter search(boolean search) {
+        this.search = search;
+        return this;
     }
 
     public interface OnClickListener {
@@ -28,7 +35,7 @@ public class SiteAdapter extends RecyclerView.Adapter<SiteAdapter.ViewHolder> {
 
         void onSearchClick(Site item);
 
-        void onFilterClick(Site item);
+        boolean onSearchLongClick(Site item);
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -55,11 +62,14 @@ public class SiteAdapter extends RecyclerView.Adapter<SiteAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Site item = mItems.get(position);
-        holder.binding.text.setText(item.getActivatedName());
-        holder.binding.filter.setImageResource(item.getFilterIcon());
+        holder.binding.text.setText(item.getName());
+        holder.binding.text.setFocusable(!search);
+        holder.binding.text.setActivated(item.isActivated());
+        holder.binding.search.setActivated(item.isActivated());
         holder.binding.search.setImageResource(item.getSearchIcon());
+        holder.binding.search.setVisibility(search ? View.VISIBLE : View.GONE);
         holder.binding.text.setOnClickListener(v -> mListener.onTextClick(item));
         holder.binding.search.setOnClickListener(v -> mListener.onSearchClick(item));
-        holder.binding.filter.setOnClickListener(v -> mListener.onFilterClick(item));
+        holder.binding.search.setOnLongClickListener(v -> mListener.onSearchLongClick(item));
     }
 }

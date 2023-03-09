@@ -26,7 +26,7 @@ public class App extends Application {
 
     public App() {
         instance = this;
-        executor = Executors.newFixedThreadPool(4);
+        executor = Executors.newFixedThreadPool(Constant.THREAD_POOL);
         handler = HandlerCompat.createAsync(Looper.getMainLooper());
     }
 
@@ -34,7 +34,7 @@ public class App extends Application {
         return instance;
     }
 
-    public static Activity getActivity() {
+    public static Activity activity() {
         return get().activity;
     }
 
@@ -48,7 +48,7 @@ public class App extends Application {
 
     public static void post(Runnable runnable, long delayMillis) {
         get().handler.removeCallbacks(runnable);
-        get().handler.postDelayed(runnable, delayMillis);
+        if (delayMillis >= 0) get().handler.postDelayed(runnable, delayMillis);
     }
 
     public static void removeCallbacks(Runnable runnable) {
@@ -70,32 +70,32 @@ public class App extends Application {
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(@NonNull Activity activity, @Nullable Bundle savedInstanceState) {
-                if (activity != getActivity()) setActivity(activity);
+                if (activity != activity()) setActivity(activity);
             }
 
             @Override
             public void onActivityStarted(@NonNull Activity activity) {
-                if (activity != getActivity()) setActivity(activity);
+                if (activity != activity()) setActivity(activity);
             }
 
             @Override
             public void onActivityResumed(@NonNull Activity activity) {
-                if (activity != getActivity()) setActivity(activity);
+                if (activity != activity()) setActivity(activity);
             }
 
             @Override
             public void onActivityPaused(@NonNull Activity activity) {
-                if (activity == getActivity()) setActivity(null);
+                if (activity == activity()) setActivity(null);
             }
 
             @Override
             public void onActivityStopped(@NonNull Activity activity) {
-                if (activity == getActivity()) setActivity(null);
+                if (activity == activity()) setActivity(null);
             }
 
             @Override
             public void onActivityDestroyed(@NonNull Activity activity) {
-                if (activity == getActivity()) setActivity(null);
+                if (activity == activity()) setActivity(null);
             }
 
             @Override

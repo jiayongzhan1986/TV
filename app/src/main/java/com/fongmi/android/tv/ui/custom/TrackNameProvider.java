@@ -35,23 +35,27 @@ public class TrackNameProvider {
         } else {
             trackName = joinWithSeparator(buildLanguageString(format), buildLabelString(format));
         }
-        return trackName.length() == 0 ? resources.getString(R.string.exo_track_unknown) : trackName;
+        return TextUtils.isEmpty(trackName) ? resources.getString(R.string.exo_track_unknown) : trackName;
     }
 
     public String getTrackName(IjkTrackInfo trackInfo) {
         String trackName;
         int trackType = trackInfo.getTrackType();
-        if (trackType == C.TRACK_TYPE_AUDIO) {
+        if (trackType == C.TRACK_TYPE_VIDEO) {
+            trackName = joinWithSeparator(buildResolutionString(trackInfo.getWidth(), trackInfo.getHeight()), buildBitrateString(trackInfo.getBitrate()));
+        } else if (trackType == C.TRACK_TYPE_AUDIO) {
             trackName = joinWithSeparator(buildLanguageString(trackInfo.getLanguage()), buildAudioChannelString(trackInfo.getChannelCount()), buildBitrateString(trackInfo.getBitrate()));
         } else {
             trackName = buildLanguageString(trackInfo.getLanguage());
         }
-        return trackName.length() == 0 ? resources.getString(R.string.exo_track_unknown) : trackName;
+        return TextUtils.isEmpty(trackName) ? resources.getString(R.string.exo_track_unknown) : trackName;
     }
 
     private String buildResolutionString(Format format) {
-        int width = format.width;
-        int height = format.height;
+        return buildResolutionString(format.width, format.height);
+    }
+
+    private String buildResolutionString(int width, int height) {
         return width == Format.NO_VALUE || height == Format.NO_VALUE ? "" : resources.getString(R.string.exo_track_resolution, width, height);
     }
 
@@ -113,18 +117,10 @@ public class TrackNameProvider {
 
     private String buildRoleString(Format format) {
         String roles = "";
-        if ((format.roleFlags & C.ROLE_FLAG_ALTERNATE) != 0) {
-            roles = resources.getString(R.string.exo_track_role_alternate);
-        }
-        if ((format.roleFlags & C.ROLE_FLAG_SUPPLEMENTARY) != 0) {
-            roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_supplementary));
-        }
-        if ((format.roleFlags & C.ROLE_FLAG_COMMENTARY) != 0) {
-            roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_commentary));
-        }
-        if ((format.roleFlags & (C.ROLE_FLAG_CAPTION | C.ROLE_FLAG_DESCRIBES_MUSIC_AND_SOUND)) != 0) {
-            roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_closed_captions));
-        }
+        if ((format.roleFlags & C.ROLE_FLAG_ALTERNATE) != 0) roles = resources.getString(R.string.exo_track_role_alternate);
+        if ((format.roleFlags & C.ROLE_FLAG_SUPPLEMENTARY) != 0) roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_supplementary));
+        if ((format.roleFlags & C.ROLE_FLAG_COMMENTARY) != 0) roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_commentary));
+        if ((format.roleFlags & (C.ROLE_FLAG_CAPTION | C.ROLE_FLAG_DESCRIBES_MUSIC_AND_SOUND)) != 0) roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_closed_captions));
         return roles;
     }
 
@@ -144,21 +140,11 @@ public class TrackNameProvider {
 
     private static int inferPrimaryTrackType(Format format) {
         int trackType = MimeTypes.getTrackType(format.sampleMimeType);
-        if (trackType != C.TRACK_TYPE_UNKNOWN) {
-            return trackType;
-        }
-        if (MimeTypes.getVideoMediaMimeType(format.codecs) != null) {
-            return C.TRACK_TYPE_VIDEO;
-        }
-        if (MimeTypes.getAudioMediaMimeType(format.codecs) != null) {
-            return C.TRACK_TYPE_AUDIO;
-        }
-        if (format.width != Format.NO_VALUE || format.height != Format.NO_VALUE) {
-            return C.TRACK_TYPE_VIDEO;
-        }
-        if (format.channelCount != Format.NO_VALUE || format.sampleRate != Format.NO_VALUE) {
-            return C.TRACK_TYPE_AUDIO;
-        }
+        if (trackType != C.TRACK_TYPE_UNKNOWN) return trackType;
+        if (MimeTypes.getVideoMediaMimeType(format.codecs) != null) return C.TRACK_TYPE_VIDEO;
+        if (MimeTypes.getAudioMediaMimeType(format.codecs) != null) return C.TRACK_TYPE_AUDIO;
+        if (format.width != Format.NO_VALUE || format.height != Format.NO_VALUE) return C.TRACK_TYPE_VIDEO;
+        if (format.channelCount != Format.NO_VALUE || format.sampleRate != Format.NO_VALUE) return C.TRACK_TYPE_AUDIO;
         return C.TRACK_TYPE_UNKNOWN;
     }
 }

@@ -36,6 +36,8 @@ public class Site {
     private Integer searchable;
     @SerializedName("filterable")
     private Integer filterable;
+    @SerializedName("changeable")
+    private Integer changeable;
     @SerializedName("ext")
     private String ext;
     @SerializedName("jar")
@@ -122,6 +124,14 @@ public class Site {
         this.filterable = filterable;
     }
 
+    public Integer getChangeable() {
+        return changeable == null ? 1 : changeable;
+    }
+
+    public void setChangeable(Integer changeable) {
+        this.changeable = changeable;
+    }
+
     public String getExt() {
         return TextUtils.isEmpty(ext) ? "" : ext;
     }
@@ -168,12 +178,25 @@ public class Site {
         return this;
     }
 
+    public boolean isChangeable() {
+        return getChangeable() == 1;
+    }
+
+    public Site setChangeable(boolean changeable) {
+        setChangeable(changeable ? 1 : 0);
+        return this;
+    }
+
     public int getSearchIcon() {
-        return isSearchable() ? R.drawable.ic_search_on : R.drawable.ic_search_off;
+        return isSearchable() ? R.drawable.ic_site_search_on : R.drawable.ic_site_search_off;
     }
 
     public int getFilterIcon() {
-        return isFilterable() ? R.drawable.ic_filter_on : R.drawable.ic_filter_off;
+        return isFilterable() ? R.drawable.ic_site_filter_on : R.drawable.ic_site_filter_off;
+    }
+
+    public int getChangeIcon() {
+        return isChangeable() ? R.drawable.ic_site_change_on : R.drawable.ic_site_change_off;
     }
 
     public static Site find(String key) {
@@ -188,8 +211,8 @@ public class Site {
         Site item = find(getKey());
         if (item == null) return this;
         setFilterable(item.getFilterable());
-        if (getSearchable() == 0) return this;
-        if (getSearchable() == 1) setSearchable(Math.max(item.getSearchable(), 1));
+        setChangeable(item.getChangeable());
+        if (getSearchable() != 0) setSearchable(item.getSearchable());
         return this;
     }
 

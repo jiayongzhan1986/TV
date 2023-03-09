@@ -52,7 +52,7 @@ public class SettingActivity extends BaseActivity implements ConfigCallback, Sit
         mBinding.wallUrl.setText(WallConfig.getUrl());
         mBinding.versionText.setText(BuildConfig.VERSION_NAME);
         mBinding.sizeText.setText(ResUtil.getStringArray(R.array.select_size)[Prefers.getSize()]);
-        mBinding.scaleText.setText(ResUtil.getStringArray(R.array.select_scale)[Prefers.getVodScale()]);
+        mBinding.scaleText.setText(ResUtil.getStringArray(R.array.select_scale)[Prefers.getScale()]);
         mBinding.playerText.setText(ResUtil.getStringArray(R.array.select_player)[Prefers.getPlayer()]);
         mBinding.decodeText.setText(ResUtil.getStringArray(R.array.select_decode)[Prefers.getDecode()]);
         mBinding.renderText.setText(ResUtil.getStringArray(R.array.select_render)[Prefers.getRender()]);
@@ -68,9 +68,10 @@ public class SettingActivity extends BaseActivity implements ConfigCallback, Sit
         mBinding.wall.setOnClickListener(view -> ConfigDialog.create(this).type(2).show());
         mBinding.vodHistory.setOnClickListener(view -> HistoryDialog.create(this).type(0).show());
         mBinding.liveHistory.setOnClickListener(view -> HistoryDialog.create(this).type(1).show());
-        mBinding.version.setOnClickListener(view -> Updater.get().reset().start(this));
         mBinding.wallDefault.setOnClickListener(view -> setWallDefault());
         mBinding.wallRefresh.setOnClickListener(view -> setWallRefresh());
+        mBinding.version.setOnLongClickListener(view -> onVersion(true));
+        mBinding.version.setOnClickListener(view -> onVersion(false));
         mBinding.quality.setOnClickListener(view -> setQuality());
         mBinding.player.setOnClickListener(view -> setPlayer());
         mBinding.decode.setOnClickListener(view -> setDecode());
@@ -157,6 +158,12 @@ public class SettingActivity extends BaseActivity implements ConfigCallback, Sit
         LiveConfig.get().setHome(item);
     }
 
+    private boolean onVersion(boolean dev) {
+        if (dev) Updater.get().force().dev().start();
+        else Updater.get().force().start();
+        return true;
+    }
+
     private void setQuality() {
         int index = Prefers.getQuality();
         String[] array = ResUtil.getStringArray(R.array.select_quality);
@@ -187,9 +194,9 @@ public class SettingActivity extends BaseActivity implements ConfigCallback, Sit
     }
 
     private void setScale() {
-        int index = Prefers.getVodScale();
+        int index = Prefers.getScale();
         String[] array = ResUtil.getStringArray(R.array.select_scale);
-        Prefers.putVodScale(index = index == array.length - 1 ? 0 : ++index);
+        Prefers.putScale(index = index == array.length - 1 ? 0 : ++index);
         mBinding.scaleText.setText(array[index]);
     }
 

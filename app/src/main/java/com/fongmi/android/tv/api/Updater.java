@@ -11,7 +11,6 @@ import com.fongmi.android.tv.BuildConfig;
 import com.fongmi.android.tv.Github;
 import com.fongmi.android.tv.R;
 import com.fongmi.android.tv.databinding.DialogUpdateBinding;
-import com.fongmi.android.tv.net.Callback;
 import com.fongmi.android.tv.net.Download;
 import com.fongmi.android.tv.net.OkHttp;
 import com.fongmi.android.tv.utils.FileUtil;
@@ -25,12 +24,11 @@ import org.json.JSONObject;
 import java.io.File;
 import java.util.Locale;
 
-public class Updater {
+public class Updater implements Download.Callback {
 
     private DialogUpdateBinding binding;
     private AlertDialog dialog;
     private String branch;
-    private boolean force;
 
     private static class Loader {
         static volatile Updater INSTANCE = new Updater();
@@ -56,25 +54,23 @@ public class Updater {
         this.branch = Github.RELEASE;
     }
 
-    public Updater reset() {
+    public Updater force() {
+        Notify.show(R.string.update_check);
         Prefers.putUpdate(true);
         return this;
     }
 
-    public Updater force() {
-        Notify.show(R.string.update_check);
-        this.force = true;
+    public Updater dev() {
+        this.branch = Github.DEV;
         return this;
     }
 
-    public Updater branch(String branch) {
-        this.branch = branch;
+    private Updater check() {
+        dismiss();
         return this;
     }
 
-    public void start(Activity activity) {
-        this.binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
-        this.dialog = new MaterialAlertDialogBuilder(activity).setView(binding.getRoot()).setCancelable(false).create();
+    public void start() {
         App.execute(this::doInBackground);
     }
 
@@ -88,24 +84,23 @@ public class Updater {
             String name = object.optString("name");
             String desc = object.optString("desc");
             int code = object.optInt("code");
-            if (need(code, name) || force) App.post(() -> show(name, desc));
+            if (need(code, name)) App.post(() -> show(App.activity(), name, desc));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void show(String version, String desc) {
+    private void show(Activity activity, String version, String desc) {
+        binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
         binding.version.setText(ResUtil.getString(R.string.update_version, version));
         binding.confirm.setOnClickListener(this::confirm);
         binding.cancel.setOnClickListener(this::cancel);
         binding.desc.setText(desc);
-        dialog.show();
+        check().create(activity).show();
     }
 
-    private void dismiss() {
-        if (dialog != null) dialog.dismiss();
-        this.branch = Github.RELEASE;
-        this.force = false;
+    private AlertDialog create(Activity activity) {
+        return dialog = new MaterialAlertDialogBuilder(activity).setView(binding.getRoot()).setCancelable(false).create();
     }
 
     private void cancel(View view) {
@@ -115,30 +110,30 @@ public class Updater {
 
     private void confirm(View view) {
         binding.confirm.setEnabled(false);
-        download();
+        Download.create(getApk(), getFile(), this).start();
     }
 
-    private void download() {
-        Download.create(getApk(), getFile(), getCallback()).start();
+    private void dismiss() {
+        try {
+            if (dialog != null) dialog.dismiss();
+        } catch (Exception ignored) {
+        }
     }
 
-    private Callback getCallback() {
-        return new Callback() {
-            @Override
-            public void progress(int progress) {
-                binding.confirm.setText(String.format(Locale.getDefault(), "%1$d%%", progress));
-            }
+    @Override
+    public void progress(int progress) {
+        binding.confirm.setText(String.format(Locale.getDefault(), "%1$d%%", progress));
+    }
 
-            @Override
-            public void success() {
-                FileUtil.openFile(getFile());
-                dismiss();
-            }
+    @Override
+    public void error(String message) {
+        Notify.show(message);
+        dismiss();
+    }
 
-            @Override
-            public void error() {
-                dismiss();
-            }
-        };
+    @Override
+    public void success(File file) {
+        FileUtil.openFile(getFile());
+        dismiss();
     }
 }

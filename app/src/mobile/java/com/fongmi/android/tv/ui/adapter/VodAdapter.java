@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.fongmi.android.tv.bean.Vod;
 import com.fongmi.android.tv.databinding.AdapterVodBinding;
 import com.fongmi.android.tv.utils.ImgUtil;
-import com.fongmi.android.tv.utils.ResUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,6 @@ public class VodAdapter extends RecyclerView.Adapter<VodAdapter.ViewHolder> {
     public VodAdapter(OnClickListener listener) {
         this.mListener = listener;
         this.mItems = new ArrayList<>();
-        setLayoutSize(3);
     }
 
     public interface OnClickListener {
@@ -33,11 +31,13 @@ public class VodAdapter extends RecyclerView.Adapter<VodAdapter.ViewHolder> {
         boolean onLongClick(Vod item);
     }
 
-    private void setLayoutSize(int spanCount) {
-        int space = ResUtil.dp2px(32) + ResUtil.dp2px(16 * (spanCount - 1));
-        int base = ResUtil.getScreenWidthPx() - space;
-        width = base / spanCount;
-        height = (int) (width / 0.75f);
+    public void setSize(int[] size) {
+        this.width = size[0];
+        this.height = size[1];
+    }
+
+    public int getWidth() {
+        return width;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -53,6 +53,11 @@ public class VodAdapter extends RecyclerView.Adapter<VodAdapter.ViewHolder> {
     public void addAll(List<Vod> items) {
         mItems.addAll(items);
         notifyItemRangeInserted(mItems.size(), items.size());
+    }
+
+    public void clear() {
+        mItems.clear();
+        notifyDataSetChanged();
     }
 
     @Override

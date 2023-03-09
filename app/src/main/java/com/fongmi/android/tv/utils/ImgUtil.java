@@ -31,24 +31,28 @@ public class ImgUtil {
     }
 
     public static void loadKeep(String url, ImageView view) {
-        Glide.with(App.get()).load(Utils.checkProxy(url)).error(R.drawable.ic_img_error).placeholder(R.drawable.ic_img_loading).into(view);
+        view.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(App.get()).asBitmap().load(Utils.checkProxy(url)).error(R.drawable.ic_img_error).placeholder(R.drawable.ic_img_loading).listener(getListener(view)).into(view);
     }
 
     public static void loadHistory(String url, ImageView view) {
-        Glide.with(App.get()).load(Utils.checkProxy(url)).error(R.drawable.ic_img_error).placeholder(R.drawable.ic_img_loading).into(view);
+        view.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(App.get()).asBitmap().load(Utils.checkProxy(url)).error(R.drawable.ic_img_error).placeholder(R.drawable.ic_img_loading).listener(getListener(view)).into(view);
     }
 
     public static void loadLive(String url, ImageView view) {
         view.setVisibility(TextUtils.isEmpty(url) ? View.GONE : View.VISIBLE);
-        Glide.with(App.get()).load(url).error(R.drawable.ic_live).dontAnimate().signature(new ObjectKey(url)).into(view);
+        if (TextUtils.isEmpty(url)) view.setImageResource(R.drawable.ic_img_empty);
+        else Glide.with(App.get()).asBitmap().load(url).skipMemoryCache(true).dontAnimate().signature(new ObjectKey(url)).error(R.drawable.ic_img_empty).into(view);
     }
 
     public static GlideUrl getUrl(String url) {
+        String param = null;
         LazyHeaders.Builder builder = new LazyHeaders.Builder();
-        if (url.contains("@Cookie=")) builder.addHeader("Cookie", url.split("@Cookie=")[1].split("@")[0]);
-        if (url.contains("@Referer=")) builder.addHeader("Referer", url.split("@Referer=")[1].split("@")[0]);
-        if (url.contains("@User-Agent=")) builder.addHeader("User-Agent", url.split("@User-Agent=")[1].split("@")[0]);
-        return new GlideUrl(url.split("@")[0], builder.build());
+        if (url.contains("@Cookie=")) builder.addHeader("Cookie", param = url.split("@Cookie=")[1].split("@")[0]);
+        if (url.contains("@Referer=")) builder.addHeader("Referer", param = url.split("@Referer=")[1].split("@")[0]);
+        if (url.contains("@User-Agent=")) builder.addHeader("User-Agent", param = url.split("@User-Agent=")[1].split("@")[0]);
+        return new GlideUrl(param == null ? url : url.split("@")[0], builder.build());
     }
 
     private static RequestListener<Bitmap> getListener(ImageView view) {
@@ -74,8 +78,9 @@ public class ImgUtil {
         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
         if (bitmap.getWidth() < width && bitmap.getHeight() < height) return bytes;
         Matrix matrix = new Matrix();
+        boolean land = bitmap.getWidth() > bitmap.getHeight();
         matrix.postScale((float) width / bitmap.getWidth(), (float) height / bitmap.getHeight());
-        bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, false);
+        bitmap = Bitmap.createBitmap(bitmap, land ? bitmap.getWidth() / 2 - bitmap.getHeight() / 2 : 0, 0, bitmap.getHeight(), bitmap.getHeight(), matrix, false);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         return baos.toByteArray();

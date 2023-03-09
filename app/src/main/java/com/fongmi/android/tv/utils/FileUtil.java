@@ -87,12 +87,28 @@ public class FileUtil {
 
     public static String read(String path) {
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(getLocal(path))));
+            return read(new FileInputStream(getLocal(path)));
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public static String read(InputStream is) {
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
             StringBuilder sb = new StringBuilder();
             String text;
             while ((text = br.readLine()) != null) sb.append(text).append("\n");
             br.close();
             return Utils.substring(sb.toString());
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public static String getAsset(String fileName) {
+        try {
+            return read(App.get().getAssets().open(fileName));
         } catch (Exception e) {
             return "";
         }
@@ -158,12 +174,14 @@ public class FileUtil {
         App.get().startActivity(intent);
     }
 
-    private static void chmod(File file) {
+    public static File chmod(File file) {
         try {
             Process process = Runtime.getRuntime().exec("chmod 777 " + file);
             process.waitFor();
+            return file;
         } catch (Exception e) {
             e.printStackTrace();
+            return file;
         }
     }
 }

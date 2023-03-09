@@ -7,6 +7,7 @@ import android.util.ArrayMap;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.fongmi.android.tv.Constant;
 import com.fongmi.android.tv.api.ApiConfig;
 import com.fongmi.android.tv.bean.Result;
 import com.fongmi.android.tv.bean.Site;
@@ -39,14 +40,6 @@ public class SiteViewModel extends ViewModel {
         this.search = new MutableLiveData<>();
     }
 
-    public MutableLiveData<Result> getResult() {
-        return result;
-    }
-
-    public MutableLiveData<Result> getPlayer() {
-        return player;
-    }
-
     public void homeContent() {
         Site site = ApiConfig.get().getHome();
         execute(result, () -> {
@@ -54,6 +47,7 @@ public class SiteViewModel extends ViewModel {
                 Spider spider = ApiConfig.get().getCSP(site);
                 String homeContent = spider.homeContent(true);
                 SpiderDebug.log(homeContent);
+                ApiConfig.get().setJar(site.getJar());
                 Result result = Result.fromJson(homeContent);
                 if (result.getList().size() > 0) return result;
                 String homeVideoContent = spider.homeVideoContent();
@@ -91,6 +85,7 @@ public class SiteViewModel extends ViewModel {
                 Spider spider = ApiConfig.get().getCSP(site);
                 String categoryContent = spider.categoryContent(tid, page, filter, extend);
                 SpiderDebug.log(categoryContent);
+                ApiConfig.get().setJar(site.getJar());
                 return Result.fromJson(categoryContent);
             } else {
                 ArrayMap<String, String> params = new ArrayMap<>();
@@ -113,6 +108,7 @@ public class SiteViewModel extends ViewModel {
                 Spider spider = ApiConfig.get().getCSP(site);
                 String detailContent = spider.detailContent(Arrays.asList(id));
                 SpiderDebug.log(detailContent);
+                ApiConfig.get().setJar(site.getJar());
                 Result result = Result.fromJson(detailContent);
                 if (!result.getList().isEmpty()) result.getList().get(0).setVodFlags();
                 return result;
@@ -136,6 +132,7 @@ public class SiteViewModel extends ViewModel {
                 Spider spider = ApiConfig.get().getCSP(site);
                 String playerContent = spider.playerContent(flag, id, ApiConfig.get().getFlags());
                 SpiderDebug.log(playerContent);
+                ApiConfig.get().setJar(site.getJar());
                 Result result = Result.objectFrom(playerContent);
                 if (result.getFlag().isEmpty()) result.setFlag(flag);
                 result.setKey(key);
@@ -146,7 +143,9 @@ public class SiteViewModel extends ViewModel {
                 params.put("flag", flag);
                 String body = OkHttp.newCall(site.getApi(), params).execute().body().string();
                 SpiderDebug.log(body);
-                return Result.fromJson(body);
+                Result result = Result.fromJson(body);
+                if (result.getFlag().isEmpty()) result.setFlag(flag);
+                return result;
             } else {
                 String url = id;
                 String type = Uri.parse(url).getQueryParameter("type");
@@ -155,7 +154,6 @@ public class SiteViewModel extends ViewModel {
                 result.setUrl(url);
                 result.setFlag(flag);
                 result.setPlayUrl(site.getPlayUrl());
-                result.setJx(Utils.isVip(url) ? 1 : 0);
                 result.setParse(Utils.isVideoFormat(url) ? 0 : 1);
                 return result;
             }
@@ -190,7 +188,7 @@ public class SiteViewModel extends ViewModel {
         executor = Executors.newFixedThreadPool(2);
         executor.execute(() -> {
             try {
-                if (!Thread.interrupted()) result.postValue(executor.submit(callable).get(30, TimeUnit.SECONDS));
+                if (!Thread.interrupted()) result.postValue(executor.submit(callable).get(Constant.TIMEOUT_VOD, TimeUnit.MILLISECONDS));
             } catch (Throwable e) {
                 e.printStackTrace();
                 if (e instanceof InterruptedException) return;

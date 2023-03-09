@@ -4,9 +4,6 @@
     <string name="app_name">影視</string>
     <string name="app_exit">再按一次返回鍵退出</string>
 
-    <!-- Splash -->
-    <string name="splash_info">正在載入配置</string>
-
     <!-- Vod -->
     <string name="vod_last">上次看到<xliff:g name="name">%s</xliff:g></string>
 
@@ -38,20 +35,24 @@
 
     <!-- Play -->
     <string name="play">播放</string>
-    <string name="play_next">下一集</string>
-    <string name="play_prev">上一集</string>
+    <string name="play_next">下集</string>
+    <string name="play_prev">上集</string>
     <string name="play_ready">準備播放：<xliff:g name="name">%s</xliff:g></string>
     <string name="play_track_text">字幕</string>
     <string name="play_track_audio">音軌</string>
+    <string name="play_track_video">視軌</string>
     <string name="play_invert">反轉</string>
     <string name="play_across">跨類</string>
-    <string name="play_oped">片頭片尾</string>
+    <string name="play_op">片頭</string>
+    <string name="play_ed">片尾</string>
     <string name="play_reverse">倒序</string>
     <string name="play_forward">→</string>
     <string name="play_backward">←</string>
     <string name="play_forward_hint">已切換正序播放</string>
     <string name="play_backward_hint">已切換倒序播放</string>
-    <string name="play_switching">正在切換線路至「<xliff:g name="name">%s</xliff:g>」</string>
+    <string name="play_switch_parse">正在切换解析至「<xliff:g name="name">%s</xliff:g>」</string>
+    <string name="play_switch_flag">正在切換線路至「<xliff:g name="name">%s</xliff:g>」</string>
+    <string name="play_switch_site">正在切換站源至「<xliff:g name="name">%s</xliff:g>」</string>
 
     <!-- Parse -->
     <string name="parse">解析</string>
@@ -74,6 +75,7 @@
     <string name="dialog_positive">確定</string>
     <string name="dialog_negative">取消</string>
     <string name="dialog_config_hint">請輸入接口…</string>
+    <string name="dialog_config_url">請輸入網址…</string>
 
     <!-- Error -->
     <string name="error_so_load">FFmpeg 載入失敗</string>
@@ -82,9 +84,10 @@
     <string name="error_play_next">已經是最後一集了！</string>
     <string name="error_play_prev">已經是第一集了！</string>
     <string name="error_play_parse">播放網址解析失敗</string>
-    <string name="error_play_load">播放資料載入失敗</string>
+    <string name="error_play_url">播放資料載入失敗</string>
     <string name="error_play_format">不支援的影片格式</string>
-    <string name="error_episode">暫無播放資料</string>
+    <string name="error_play_timeout">連線逾時</string>
+    <string name="error_play_episode">暫無播放資料</string>
     <string name="error_empty">找不到資料</string>
 
     <!-- Update -->
