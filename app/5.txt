@@ -218,6 +218,328 @@ http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000058/index.m3u8?
 http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-id="爱体育" tvg-name="爱体育" tvg-logo="https://epg.iill.top/logo/iHOT爱体育.png" group-title="•iHOT「IPV6」",iHOT 爱体育「IPV6」
 http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000060/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000060&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+#EXTINF:-1 tvg-name="虎牙-周星星" tvg-logo="https://live.fanmingming.com/tv/虎牙-周星星.png" group-title="虎牙",虎牙-周星星
+http://159.75.85.63:35455/huya/11342412
+#EXTINF:-1 tvg-name="虎牙-林正英" tvg-logo="https://live.fanmingming.com/tv/虎牙-林正英.png" group-title="虎牙",虎牙-林正英
+http://159.75.85.63:35455/huya/11342421
+#EXTINF:-1 tvg-name="虎牙-沈腾" tvg-logo="https://live.fanmingming.com/tv/虎牙-沈腾.png" group-title="虎牙",虎牙-沈腾
+http://159.75.85.63:35455/huya/11601968
+#EXTINF:-1 tvg-name="虎牙-猫和老鼠" tvg-logo="https://live.fanmingming.com/tv/虎牙-猫和老鼠.png" group-title="虎牙",虎牙-猫和老鼠
+http://159.75.85.63:35455/huya/11352879
+#EXTINF:-1 tvg-name="虎牙-成龙" tvg-logo="https://live.fanmingming.com/tv/虎牙-成龙.png" group-title="虎牙",虎牙-成龙
+http://159.75.85.63:35455/huya/11342386
+#EXTINF:-1 tvg-name="虎牙-李连杰" tvg-logo="https://live.fanmingming.com/tv/虎牙-李连杰.png" group-title="虎牙",虎牙-李连杰
+http://159.75.85.63:35455/huya/11342390
+#EXTINF:-1 tvg-name="虎牙-刘德华" tvg-logo="https://live.fanmingming.com/tv/虎牙-刘德华.png" group-title="虎牙",虎牙-刘德华
+http://159.75.85.63:35455/huya/11342424
+#EXTINF:-1 tvg-name="虎牙-王晶" tvg-logo="https://live.fanmingming.com/tv/虎牙-王晶.png" group-title="虎牙",虎牙-王晶
+http://159.75.85.63:35455/huya/11602058
+#EXTINF:-1 tvg-name="虎牙-中华小当家" tvg-logo="https://live.fanmingming.com/tv/虎牙-中华小当家.png" group-title="虎牙",虎牙-中华小当家
+http://159.75.85.63:35455/huya/11342413
+#EXTINF:-1 tvg-name="虎牙-杰森·斯坦森" tvg-logo="https://live.fanmingming.com/tv/虎牙-杰森·斯坦森.png" group-title="虎牙",虎牙-杰森·斯坦森
+http://159.75.85.63:35455/huya/21059588
+#EXTINF:-1 tvg-name="虎牙-喜剧专场" tvg-logo="https://live.fanmingming.com/tv/虎牙-喜剧专场.png" group-title="虎牙",虎牙-喜剧专场
+http://159.75.85.63:35455/huya/11602044
+#EXTINF:-1 tvg-name="虎牙-甄子丹" tvg-logo="https://live.fanmingming.com/tv/虎牙-甄子丹.png" group-title="虎牙",虎牙-甄子丹
+http://159.75.85.63:35455/huya/11352935
+#EXTINF:-1 tvg-name="虎牙-巨石强森" tvg-logo="https://live.fanmingming.com/tv/虎牙-巨石强森.png" group-title="虎牙",虎牙-巨石强森
+http://159.75.85.63:35455/huya/21059581
+#EXTINF:-1 tvg-name="虎牙-洪金宝" tvg-logo="https://live.fanmingming.com/tv/虎牙-洪金宝.png" group-title="虎牙",虎牙-洪金宝
+http://159.75.85.63:35455/huya/11279251
+#EXTINF:-1 tvg-name="虎牙-詹姆斯邦德" tvg-logo="https://live.fanmingming.com/tv/虎牙-詹姆斯邦德.png" group-title="虎牙",虎牙-詹姆斯邦德
+http://159.75.85.63:35455/huya/21059585
+#EXTINF:-1 tvg-name="虎牙-徐克" tvg-logo="https://live.fanmingming.com/tv/虎牙-徐克.png" group-title="虎牙",虎牙-徐克
+http://159.75.85.63:35455/huya/11352909
+#EXTINF:-1 tvg-name="虎牙-周润发" tvg-logo="https://live.fanmingming.com/tv/虎牙-周润发.png" group-title="虎牙",虎牙-周润发
+http://159.75.85.63:35455/huya/11342387
+#EXTINF:-1 tvg-name="虎牙-徐峥" tvg-logo="https://live.fanmingming.com/tv/虎牙-徐峥.png" group-title="虎牙",虎牙-徐峥
+http://159.75.85.63:35455/huya/11602043
+#EXTINF:-1 tvg-name="虎牙-许氏三杰" tvg-logo="https://live.fanmingming.com/tv/虎牙-许氏三杰.png" group-title="虎牙",虎牙-许氏三杰
+http://159.75.85.63:35455/huya/11602033
+#EXTINF:-1 tvg-name="虎牙-黄渤" tvg-logo="https://live.fanmingming.com/tv/虎牙-黄渤.png" group-title="虎牙",虎牙-黄渤
+http://159.75.85.63:35455/huya/11352876
+#EXTINF:-1 tvg-name="虎牙-张卫健" tvg-logo="https://live.fanmingming.com/tv/虎牙-张卫健.png" group-title="虎牙",虎牙-张卫健
+http://159.75.85.63:35455/huya/11342423
+#EXTINF:-1 tvg-name="虎牙-冯小刚" tvg-logo="https://live.fanmingming.com/tv/虎牙-冯小刚.png" group-title="虎牙",虎牙-冯小刚
+http://159.75.85.63:35455/huya/11352906
+#EXTINF:-1 tvg-name="虎牙-百鸟朝凤" tvg-logo="https://live.fanmingming.com/tv/虎牙-百鸟朝凤.png" group-title="虎牙",虎牙-百鸟朝凤
+http://159.75.85.63:35455/huya/15894162
+#EXTINF:-1 tvg-name="虎牙-陈翔六点半" tvg-logo="https://live.fanmingming.com/tv/虎牙-陈翔六点半.png" group-title="虎牙",虎牙-陈翔六点半
+http://159.75.85.63:35455/huya/11274154
+#EXTINF:-1 tvg-name="虎牙-电锯惊魂系列" tvg-logo="https://live.fanmingming.com/tv/虎牙-电锯惊魂系列.png" group-title="虎牙",虎牙-电锯惊魂系列
+http://159.75.85.63:35455/huya/11352903
+#EXTINF:-1 tvg-name="虎牙-港台电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-港台电影.png" group-title="虎牙",虎牙-港台电影
+http://159.75.85.63:35455/huya/880261
+#EXTINF:-1 tvg-name="虎牙-高分电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-高分电影.png" group-title="虎牙",虎牙-高分电影
+http://159.75.85.63:35455/huya/16615910
+#EXTINF:-1 tvg-name="虎牙-搞笑僵尸片" tvg-logo="https://live.fanmingming.com/tv/虎牙-搞笑僵尸片.png" group-title="虎牙",虎牙-搞笑僵尸片
+http://159.75.85.63:35455/huya/11352963
+#EXTINF:-1 tvg-name="虎牙-国产青春" tvg-logo="https://live.fanmingming.com/tv/虎牙-国产青春.png" group-title="虎牙",虎牙-国产青春
+http://159.75.85.63:35455/huya/11602075
+#EXTINF:-1 tvg-name="虎牙-好莱坞" tvg-logo="https://live.fanmingming.com/tv/虎牙-好莱坞.png" group-title="虎牙",虎牙-好莱坞
+http://159.75.85.63:35455/huya/21059587
+#EXTINF:-1 tvg-name="虎牙-黑帮斗争" tvg-logo="https://live.fanmingming.com/tv/虎牙-黑帮斗争.png" group-title="虎牙",虎牙-黑帮斗争
+http://159.75.85.63:35455/huya/11342419
+#EXTINF:-1 tvg-name="虎牙-红海行动" tvg-logo="https://live.fanmingming.com/tv/虎牙-红海行动.png" group-title="虎牙",虎牙-红海行动
+http://159.75.85.63:35455/huya/11601986
+#EXTINF:-1 tvg-name="虎牙-极限挑战]" tvg-logo="https://live.fanmingming.com/tv/虎牙-极限挑战].png" group-title="虎牙",虎牙-极限挑战]
+http://159.75.85.63:35455/huya/11352914
+#EXTINF:-1 tvg-name="虎牙-金庸的武侠世界" tvg-logo="https://live.fanmingming.com/tv/虎牙-金庸的武侠世界.png" group-title="虎牙",虎牙-金庸的武侠世界
+http://159.75.85.63:35455/huya/11342435
+#EXTINF:-1 tvg-name="虎牙-金庸电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-金庸电影.png" group-title="虎牙",虎牙-金庸电影
+http://159.75.85.63:35455/huya/11352897
+#EXTINF:-1 tvg-name="虎牙-经典高智商" tvg-logo="https://live.fanmingming.com/tv/虎牙-经典高智商.png" group-title="虎牙",虎牙-经典高智商
+http://159.75.85.63:35455/huya/11352962
+#EXTINF:-1 tvg-name="虎牙-经典好片" tvg-logo="https://live.fanmingming.com/tv/虎牙-经典好片.png" group-title="虎牙",虎牙-经典好片
+http://159.75.85.63:35455/huya/11342427
+#EXTINF:-1 tvg-name="虎牙-经典喜剧片" tvg-logo="https://live.fanmingming.com/tv/虎牙-经典喜剧片.png" group-title="虎牙",虎牙-经典喜剧片
+http://159.75.85.63:35455/huya/11352894
+#EXTINF:-1 tvg-name="虎牙-精彩不断" tvg-logo="https://live.fanmingming.com/tv/虎牙-精彩不断.png" group-title="虎牙",虎牙-精彩不断
+http://159.75.85.63:35455/huya/24396428
+#EXTINF:-1 tvg-name="虎牙-精忠岳飞南征北战" tvg-logo="https://live.fanmingming.com/tv/虎牙-精忠岳飞南征北战.png" group-title="虎牙",虎牙-精忠岳飞南征北战
+http://159.75.85.63:35455/huya/11336578
+#EXTINF:-1 tvg-name="虎牙-警匪" tvg-logo="https://live.fanmingming.com/tv/虎牙-警匪.png" group-title="虎牙",虎牙-警匪
+http://159.75.85.63:35455/huya/11352886
+#EXTINF:-1 tvg-name="虎牙-看救援电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-看救援电影.png" group-title="虎牙",虎牙-看救援电影
+http://159.75.85.63:35455/huya/21059586
+#EXTINF:-1 tvg-name="虎牙-科幻电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-科幻电影.png" group-title="虎牙",虎牙-科幻电影
+http://159.75.85.63:35455/huya/11602034
+#EXTINF:-1 tvg-name="虎牙-路飞" tvg-logo="https://live.fanmingming.com/tv/虎牙-路飞.png" group-title="虎牙",虎牙-路飞
+http://159.75.85.63:35455/huya/16913382
+#EXTINF:-1 tvg-name="虎牙-麻雀" tvg-logo="https://live.fanmingming.com/tv/虎牙-麻雀.png" group-title="虎牙",虎牙-麻雀
+http://159.75.85.63:35455/huya/11352881
+#EXTINF:-1 tvg-name="虎牙-命案十三宗" tvg-logo="https://live.fanmingming.com/tv/虎牙-命案十三宗.png" group-title="虎牙",虎牙-命案十三宗
+http://159.75.85.63:35455/huya/11601981
+#EXTINF:-1 tvg-name="虎牙-魔法世界" tvg-logo="https://live.fanmingming.com/tv/虎牙-魔法世界.png" group-title="虎牙",虎牙-魔法世界
+http://159.75.85.63:35455/huya/21059580
+#EXTINF:-1 tvg-name="虎牙-欧美电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-欧美电影.png" group-title="虎牙",虎牙-欧美电影
+http://159.75.85.63:35455/huya/11352880
+#EXTINF:-1 tvg-name="虎牙-欧美电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-欧美电影.png" group-title="虎牙",虎牙-欧美电影
+http://159.75.85.63:35455/huya/21059581
+#EXTINF:-1 tvg-name="虎牙-欧美娱乐" tvg-logo="https://live.fanmingming.com/tv/虎牙-欧美娱乐.png" group-title="虎牙",虎牙-欧美娱乐
+http://159.75.85.63:35455/huya/21059574
+#EXTINF:-1 tvg-name="虎牙-倩女幽魂" tvg-logo="https://live.fanmingming.com/tv/虎牙-倩女幽魂.png" group-title="虎牙",虎牙-倩女幽魂
+http://159.75.85.63:35455/huya/11601970
+#EXTINF:-1 tvg-name="女神影院" tvg-logo="https://live.fanmingming.com/tv/女神影院.png" group-title="虎牙",女神影院
+http://hpull.kktv8.com/livekktv/99350550/playlist.m3u8
+#EXTINF:-1 tvg-name="港台电影" tvg-logo="https://live.fanmingming.com/tv/港台电影.png" group-title="虎牙",港台电影
+http://159.75.85.63:35455/huya/880261
+#EXTINF:-1 tvg-name="黑帮斗争" tvg-logo="https://live.fanmingming.com/tv/黑帮斗争.png" group-title="虎牙",黑帮斗争
+http://159.75.85.63:35455/huya/11342419
+#EXTINF:-1 tvg-name="未知" tvg-logo="https://live.fanmingming.com/tv/未知.png" group-title="虎牙",未知
+http://159.75.85.63:35455/huya/11601986
+#EXTINF:-1 tvg-name="极限挑战" tvg-logo="https://live.fanmingming.com/tv/极限挑战.png" group-title="虎牙",极限挑战
+http://159.75.85.63:35455/huya/11352914
+#EXTINF:-1 tvg-name="金庸电影" tvg-logo="https://live.fanmingming.com/tv/金庸电影.png" group-title="虎牙",金庸电影
+http://159.75.85.63:35455/huya/11352897
+#EXTINF:-1 tvg-name="经典电影" tvg-logo="https://live.fanmingming.com/tv/经典电影.png" group-title="虎牙",经典电影
+http://159.75.85.63:35455/huya/11352962
+#EXTINF:-1 tvg-name="经典好片" tvg-logo="https://live.fanmingming.com/tv/经典好片.png" group-title="虎牙",经典好片
+http://159.75.85.63:35455/huya/11342427
+#EXTINF:-1 tvg-name="经典喜剧片" tvg-logo="https://live.fanmingming.com/tv/经典喜剧片.png" group-title="虎牙",经典喜剧片
+http://159.75.85.63:35455/huya/11352894
+#EXTINF:-1 tvg-name="警匪" tvg-logo="https://live.fanmingming.com/tv/警匪.png" group-title="虎牙",警匪
+http://159.75.85.63:35455/huya/11352886
+#EXTINF:-1 tvg-name="救援电影" tvg-logo="https://live.fanmingming.com/tv/救援电影.png" group-title="虎牙",救援电影
+http://159.75.85.63:35455/huya/21059586
+#EXTINF:-1 tvg-name="科幻电影" tvg-logo="https://live.fanmingming.com/tv/科幻电影.png" group-title="虎牙",科幻电影
+http://159.75.85.63:35455/huya/11602034
+#EXTINF:-1 tvg-name="电影22" tvg-logo="https://live.fanmingming.com/tv/电影22.png" group-title="虎牙",电影22
+http://159.75.85.63:35455/huya/11601981
+#EXTINF:-1 tvg-name="欧美电影" tvg-logo="https://live.fanmingming.com/tv/欧美电影.png" group-title="虎牙",欧美电影
+http://159.75.85.63:35455/huya/11352880
+#EXTINF:-1 tvg-name="欧美电影" tvg-logo="https://live.fanmingming.com/tv/欧美电影.png" group-title="虎牙",欧美电影
+http://159.75.85.63:35455/huya/21059581
+#EXTINF:-1 tvg-name="电影23" tvg-logo="https://live.fanmingming.com/tv/电影23.png" group-title="虎牙",电影23
+http://159.75.85.63:35455/huya/11601970
+#EXTINF:-1 tvg-name="电影33" tvg-logo="https://live.fanmingming.com/tv/电影33.png" group-title="虎牙",电影33
+http://159.75.85.63:35455/huya/11602077
+#EXTINF:-1 tvg-name="史诗级战争电影" tvg-logo="https://live.fanmingming.com/tv/史诗级战争电影.png" group-title="虎牙",史诗级战争电影
+http://159.75.85.63:35455/huya/21059556
+#EXTINF:-1 tvg-name="电影24" tvg-logo="https://live.fanmingming.com/tv/电影24.png" group-title="虎牙",电影24
+http://159.75.85.63:35455/huya/21059579
+#EXTINF:-1 tvg-name="电影55" tvg-logo="https://live.fanmingming.com/tv/电影55.png" group-title="虎牙",电影55
+http://159.75.85.63:35455/huya/23652317
+#EXTINF:-1 tvg-name="喜剧专场" tvg-logo="https://live.fanmingming.com/tv/喜剧专场.png" group-title="虎牙",喜剧专场
+http://159.75.85.63:35455/huya/11602044
+#EXTINF:-1 tvg-name="电影26" tvg-logo="https://live.fanmingming.com/tv/电影26.png" group-title="虎牙",电影26
+http://159.75.85.63:35455/huya/21059577
+#EXTINF:-1 tvg-name="电影77" tvg-logo="https://live.fanmingming.com/tv/电影77.png" group-title="虎牙",电影77
+http://159.75.85.63:35455/huya/11601971
+#EXTINF:-1 tvg-name="电影78" tvg-logo="https://live.fanmingming.com/tv/电影78.png" group-title="虎牙",电影78
+http://159.75.85.63:35455/huya/11342414
+#EXTINF:-1 tvg-name="金马影院" tvg-logo="https://live.fanmingming.com/tv/金马影院.png" group-title="虎牙",金马影院
+http://hpull.kktv8.com/livekktv/128600025/playlist.m3u8
+#EXTINF:-1 tvg-name="虎牙-庆余年" tvg-logo="https://live.fanmingming.com/tv/虎牙-庆余年.png" group-title="虎牙",虎牙-庆余年
+http://159.75.85.63:35455/huya/11352960
+#EXTINF:-1 tvg-name="虎牙-三国演义" tvg-logo="https://live.fanmingming.com/tv/虎牙-三国演义.png" group-title="虎牙",虎牙-三国演义
+http://159.75.85.63:35455/huya/11602077
+#EXTINF:-1 tvg-name="虎牙-神话" tvg-logo="https://live.fanmingming.com/tv/虎牙-神话.png" group-title="虎牙",虎牙-神话
+http://159.75.85.63:35455/huya/11352913
+#EXTINF:-1 tvg-name="虎牙-生活大爆炸" tvg-logo="https://live.fanmingming.com/tv/虎牙-生活大爆炸.png" group-title="虎牙",虎牙-生活大爆炸
+http://159.75.85.63:35455/huya/11342417
+#EXTINF:-1 tvg-name="虎牙-史诗级战争电影" tvg-logo="https://live.fanmingming.com/tv/虎牙-史诗级战争电影.png" group-title="虎牙",虎牙-史诗级战争电影
+http://159.75.85.63:35455/huya/21059556
+#EXTINF:-1 tvg-name="虎牙-孙悟空" tvg-logo="https://live.fanmingming.com/tv/虎牙-孙悟空.png" group-title="虎牙",虎牙-孙悟空
+http://159.75.85.63:35455/huya/11342395
+#EXTINF:-1 tvg-name="虎牙-太空混战" tvg-logo="https://live.fanmingming.com/tv/虎牙-太空混战.png" group-title="虎牙",虎牙-太空混战
+http://159.75.85.63:35455/huya/21059579
+#EXTINF:-1 tvg-name="虎牙-天雷滚滚" tvg-logo="https://live.fanmingming.com/tv/虎牙-天雷滚滚.png" group-title="虎牙",虎牙-天雷滚滚
+http://159.75.85.63:35455/huya/11352945
+#EXTINF:-1 tvg-name="虎牙-天龙八部" tvg-logo="https://live.fanmingming.com/tv/虎牙-天龙八部.png" group-title="虎牙",虎牙-天龙八部
+http://159.75.85.63:35455/huya/11602041
+#EXTINF:-1 tvg-name="虎牙-歪果仁动作" tvg-logo="https://live.fanmingming.com/tv/虎牙-歪果仁动作.png" group-title="虎牙",虎牙-歪果仁动作
+http://159.75.85.63:35455/huya/21059552
+#EXTINF:-1 tvg-name="虎牙-文成公主" tvg-logo="https://live.fanmingming.com/tv/虎牙-文成公主.png" group-title="虎牙",虎牙-文成公主
+http://159.75.85.63:35455/huya/11352974
+#EXTINF:-1 tvg-name="虎牙-我是大哥大" tvg-logo="https://live.fanmingming.com/tv/虎牙-我是大哥大.png" group-title="虎牙",虎牙-我是大哥大
+http://159.75.85.63:35455/huya/23652317
+#EXTINF:-1 tvg-name="虎牙-喜剧合家欢" tvg-logo="https://live.fanmingming.com/tv/虎牙-喜剧合家欢.png" group-title="虎牙",虎牙-喜剧合家欢
+http://159.75.85.63:35455/huya/11352877
+#EXTINF:-1 tvg-name="虎牙-喜剧专场" tvg-logo="https://live.fanmingming.com/tv/虎牙-喜剧专场.png" group-title="虎牙",虎牙-喜剧专场
+http://159.75.85.63:35455/huya/11602044
+#EXTINF:-1 tvg-name="虎牙-小鲤鱼" tvg-logo="https://live.fanmingming.com/tv/虎牙-小鲤鱼.png" group-title="虎牙",虎牙-小鲤鱼
+http://159.75.85.63:35455/huya/11601961
+#EXTINF:-1 tvg-name="陈翔六点半" tvg-logo="https://live.fanmingming.com/tv/陈翔六点半.png" group-title="虎牙",陈翔六点半
+http://159.75.85.63:35455/huya/11274154
+#EXTINF:-1 tvg-name="阿斗归来了" tvg-logo="https://live.fanmingming.com/tv/阿斗归来了.png" group-title="虎牙",阿斗归来了
+http://159.75.85.63:35455/huya/adgll
+#EXTINF:-1 tvg-name="林正英" tvg-logo="https://live.fanmingming.com/tv/林正英.png" group-title="虎牙",林正英
+http://159.75.85.63:35455/huya/11342421
+#EXTINF:-1 tvg-name="周星驰" tvg-logo="https://live.fanmingming.com/tv/周星驰.png" group-title="虎牙",周星驰
+http://159.75.85.63:35455/huya/11342412
+#EXTINF:-1 tvg-name="周润发" tvg-logo="https://live.fanmingming.com/tv/周润发.png" group-title="虎牙",周润发
+http://159.75.85.63:35455/huya/11342387
+#EXTINF:-1 tvg-name="刘德华" tvg-logo="https://live.fanmingming.com/tv/刘德华.png" group-title="虎牙",刘德华
+http://159.75.85.63:35455/huya/11342424
+#EXTINF:-1 tvg-name="李连杰" tvg-logo="https://live.fanmingming.com/tv/李连杰.png" group-title="虎牙",李连杰
+http://159.75.85.63:35455/huya/11342390
+#EXTINF:-1 tvg-name="沈腾" tvg-logo="https://live.fanmingming.com/tv/沈腾.png" group-title="虎牙",沈腾
+http://159.75.85.63:35455/huya/11601968
+#EXTINF:-1 tvg-name="徐峥黄渤" tvg-logo="https://live.fanmingming.com/tv/徐峥黄渤.png" group-title="虎牙",徐峥黄渤
+http://159.75.85.63:35455/huya/11352876
+#EXTINF:-1 tvg-name="成龙" tvg-logo="https://live.fanmingming.com/tv/成龙.png" group-title="虎牙",成龙
+http://159.75.85.63:35455/huya/11342386
+#EXTINF:-1 tvg-name="杰森斯坦森" tvg-logo="https://live.fanmingming.com/tv/杰森斯坦森.png" group-title="虎牙",杰森斯坦森
+http://159.75.85.63:35455/huya/21059588
+#EXTINF:-1 tvg-name="铁齿铜牙纪晓岚" tvg-logo="https://live.fanmingming.com/tv/铁齿铜牙纪晓岚.png" group-title="虎牙",铁齿铜牙纪晓岚
+http://159.75.85.63:35455/huya/11342396
+#EXTINF:-1 tvg-name="康熙微服私访记" tvg-logo="https://live.fanmingming.com/tv/康熙微服私访记.png" group-title="虎牙",康熙微服私访记
+http://159.75.85.63:35455/huya/11342418
+#EXTINF:-1 tvg-name="倚天屠龙记" tvg-logo="https://live.fanmingming.com/tv/倚天屠龙记.png" group-title="虎牙",倚天屠龙记
+http://159.75.85.63:35455/huya/11342403
+#EXTINF:-1 tvg-name="一代枭雄" tvg-logo="https://live.fanmingming.com/tv/一代枭雄.png" group-title="虎牙",一代枭雄
+http://159.75.85.63:35455/huya/11342398
+#EXTINF:-1 tvg-name="死神神来了" tvg-logo="https://live.fanmingming.com/tv/死神神来了.png" group-title="虎牙",死神神来了
+http://159.75.85.63:35455/huya/11352903
+#EXTINF:-1 tvg-name="破产姐妹" tvg-logo="https://live.fanmingming.com/tv/破产姐妹.png" group-title="虎牙",破产姐妹
+http://159.75.85.63:35455/huya/11342417
+#EXTINF:-1 tvg-name="古墓系列" tvg-logo="https://live.fanmingming.com/tv/古墓系列.png" group-title="虎牙",古墓系列
+http://159.75.85.63:35455/huya/11352913
+#EXTINF:-1 tvg-name="巨石强森" tvg-logo="https://live.fanmingming.com/tv/巨石强森.png" group-title="虎牙",巨石强森
+http://159.75.85.63:35455/huya/21059581
+#EXTINF:-1 tvg-name="新三国" tvg-logo="https://live.fanmingming.com/tv/新三国.png" group-title="虎牙",新三国
+http://159.75.85.63:35455/huya/11352944
+#EXTINF:-1 tvg-name="缝纫机·一起燥起来！" tvg-logo="https://live.fanmingming.com/tv/缝纫机·一起燥起来！.png" group-title="虎牙",缝纫机·一起燥起来！
+http://159.75.85.63:35455/huya/880261
+#EXTINF:-1 tvg-name="大场面战争片:一枚核弹爆炸" tvg-logo="https://live.fanmingming.com/tv/大场面战争片:一枚核弹爆炸.png" group-title="虎牙",大场面战争片:一枚核弹爆炸
+http://159.75.85.63:35455/huya/21059574
+#EXTINF:-1 tvg-name="极限挑战3·04双黄联盟暴力怼颜王" tvg-logo="https://live.fanmingming.com/tv/极限挑战3·04双黄联盟暴力怼颜王.png" group-title="虎牙",极限挑战3·04双黄联盟暴力怼颜王
+http://159.75.85.63:35455/huya/11352914
+#EXTINF:-1 tvg-name="身世神秘的范闲书写人生传奇" tvg-logo="https://live.fanmingming.com/tv/身世神秘的范闲书写人生传奇.png" group-title="虎牙",身世神秘的范闲书写人生传奇
+http://159.75.85.63:35455/huya/11352960
+#EXTINF:-1 tvg-name="路飞知道了小岛被毁灭的原因" tvg-logo="https://live.fanmingming.com/tv/路飞知道了小岛被毁灭的原因.png" group-title="虎牙",路飞知道了小岛被毁灭的原因
+http://159.75.85.63:35455/huya/16913382
+#EXTINF:-1 tvg-name="全面解读高智商悬疑片《豺狼计划》，一场狼人杀引发的血腥命案" tvg-logo="https://live.fanmingming.com/tv/全面解读高智商悬疑片《豺狼计划》，一场狼人杀引发的血腥命案.png" group-title="虎牙",全面解读高智商悬疑片《豺狼计划》，一场狼人杀引发的血腥命案
+http://159.75.85.63:35455/huya/19863777
+#EXTINF:-1 tvg-name="全球最烧脑悬疑片 哪部是你的最爱" tvg-logo="https://live.fanmingming.com/tv/全球最烧脑悬疑片 哪部是你的最爱.png" group-title="虎牙",全球最烧脑悬疑片 哪部是你的最爱
+http://159.75.85.63:35455/huya/11352880
+#EXTINF:-1 tvg-name="橙光游戏改变 我从来没见过这么炸裂的演技！" tvg-logo="https://live.fanmingming.com/tv/橙光游戏改变 我从来没见过这么炸裂的演技！.png" group-title="虎牙",橙光游戏改变 我从来没见过这么炸裂的演技！
+http://159.75.85.63:35455/huya/11602034
+#EXTINF:-1 tvg-name="历年贺岁档 笑就完事儿了" tvg-logo="https://live.fanmingming.com/tv/历年贺岁档 笑就完事儿了.png" group-title="虎牙",历年贺岁档 笑就完事儿了
+http://159.75.85.63:35455/huya/11601986
+#EXTINF:-1 tvg-name="大秦，终章！" tvg-logo="https://live.fanmingming.com/tv/大秦，终章！.png" group-title="虎牙",大秦，终章！
+http://159.75.85.63:35455/huya/11352881
+#EXTINF:-1 tvg-name="这些都是高智商的罪犯" tvg-logo="https://live.fanmingming.com/tv/这些都是高智商的罪犯.png" group-title="虎牙",这些都是高智商的罪犯
+http://159.75.85.63:35455/huya/11352962
+#EXTINF:-1 tvg-name="燃青春！热血男儿中国心" tvg-logo="https://live.fanmingming.com/tv/燃青春！热血男儿中国心.png" group-title="虎牙",燃青春！热血男儿中国心
+http://159.75.85.63:35455/huya/11352905
+#EXTINF:-1 tvg-name="快le加一点糖就很甜" tvg-logo="https://live.fanmingming.com/tv/快le加一点糖就很甜.png" group-title="虎牙",快le加一点糖就很甜
+http://159.75.85.63:35455/huya/11601961
+#EXTINF:-1 tvg-name="【警匪】不会演戏的警察不是好卧底" tvg-logo="https://live.fanmingming.com/tv/【警匪】不会演戏的警察不是好卧底.png" group-title="虎牙",【警匪】不会演戏的警察不是好卧底
+http://159.75.85.63:35455/huya/11352886
+#EXTINF:-1 tvg-name="都2023年了，还有这种极品国产片，真是让我眼前一亮" tvg-logo="https://live.fanmingming.com/tv/都2023年了，还有这种极品国产片，真是让我眼前一亮.png" group-title="虎牙",都2023年了，还有这种极品国产片，真是让我眼前一亮
+http://159.75.85.63:35455/huya/15894162
+#EXTINF:-1 tvg-name="黑帮斗争 黑与白的对峙，情与义的泯灭" tvg-logo="https://live.fanmingming.com/tv/黑帮斗争 黑与白的对峙，情与义的泯灭.png" group-title="虎牙",黑帮斗争 黑与白的对峙，情与义的泯灭
+http://159.75.85.63:35455/huya/11342419
+#EXTINF:-1 tvg-name="《模范刑警》04" tvg-logo="https://live.fanmingming.com/tv/《模范刑警》04.png" group-title="虎牙",《模范刑警》04
+http://159.75.85.63:35455/huya/17445539
+#EXTINF:-1 tvg-name="国外谍战片，你看过多少" tvg-logo="https://live.fanmingming.com/tv/国外谍战片，你看过多少.png" group-title="虎牙",国外谍战片，你看过多少
+http://159.75.85.63:35455/huya/21059587
+#EXTINF:-1 tvg-name="yi馆笑传 oh天长地久" tvg-logo="https://live.fanmingming.com/tv/yi馆笑传 oh天长地久.png" group-title="虎牙",yi馆笑传 oh天长地久
+http://159.75.85.63:35455/huya/11352891
+#EXTINF:-1 tvg-name="经典之作·金庸群侠篇电影" tvg-logo="https://live.fanmingming.com/tv/经典之作·金庸群侠篇电影.png" group-title="虎牙",经典之作·金庸群侠篇电影
+http://159.75.85.63:35455/huya/11342427
+#EXTINF:-1 tvg-name="速肌:两个光头赛车的故事" tvg-logo="https://live.fanmingming.com/tv/速肌:两个光头赛车的故事.png" group-title="虎牙",速肌:两个光头赛车的故事
+http://159.75.85.63:35455/huya/21059556
+#EXTINF:-1 tvg-name="够劲，就是中国功夫" tvg-logo="https://live.fanmingming.com/tv/够劲，就是中国功夫.png" group-title="虎牙",够劲，就是中国功夫
+http://159.75.85.63:35455/huya/11352941
+#EXTINF:-1 tvg-name="精彩电影解说，精彩不断，好戏连连！" tvg-logo="https://live.fanmingming.com/tv/精彩电影解说，精彩不断，好戏连连！.png" group-title="虎牙",精彩电影解说，精彩不断，好戏连连！
+http://159.75.85.63:35455/huya/24396428
+#EXTINF:-1 tvg-name="高分悬疑美剧《黑镜》" tvg-logo="https://live.fanmingming.com/tv/高分悬疑美剧《黑镜》.png" group-title="虎牙",高分悬疑美剧《黑镜》
+http://159.75.85.63:35455/huya/16615910
+#EXTINF:-1 tvg-name="飙车的老司机的直播间" tvg-logo="https://live.fanmingming.com/tv/飙车的老司机的直播间.png" group-title="虎牙",飙车的老司机的直播间
+http://159.75.85.63:35455/huya/11352894
+#EXTINF:-1 tvg-name="情人节：港片教你追女仔" tvg-logo="https://live.fanmingming.com/tv/情人节：港片教你追女仔.png" group-title="虎牙",情人节：港片教你追女仔
+http://159.75.85.63:35455/huya/11602043
+#EXTINF:-1 tvg-name="怪兽打架x异形世界：爽就完事了" tvg-logo="https://live.fanmingming.com/tv/怪兽打架x异形世界：爽就完事了.png" group-title="虎牙",怪兽打架x异形世界：爽就完事了
+http://159.75.85.63:35455/huya/21059577
+#EXTINF:-1 tvg-name="玄幻剧场·体验另一种生活！" tvg-logo="https://live.fanmingming.com/tv/玄幻剧场·体验另一种生活！.png" group-title="虎牙",玄幻剧场·体验另一种生活！
+http://159.75.85.63:35455/huya/11342414
+#EXTINF:-1 tvg-name="看完你也学不会系列~" tvg-logo="https://live.fanmingming.com/tv/看完你也学不会系列~.png" group-title="虎牙",看完你也学不会系列~
+http://159.75.85.63:35455/huya/11352945
+#EXTINF:-1 tvg-name="【喜剧专场】我们一起找乐子" tvg-logo="https://live.fanmingming.com/tv/【喜剧专场】我们一起找乐子.png" group-title="虎牙",【喜剧专场】我们一起找乐子
+http://159.75.85.63:35455/huya/11602044
+#EXTINF:-1 tvg-name="快意江湖：金庸的武侠世界" tvg-logo="https://live.fanmingming.com/tv/快意江湖：金庸的武侠世界.png" group-title="虎牙",快意江湖：金庸的武侠世界
+http://159.75.85.63:35455/huya/11342435
+#EXTINF:-1 tvg-name="朋友，和赵盼儿一起跳支舞吗！？" tvg-logo="https://live.fanmingming.com/tv/朋友，和赵盼儿一起跳支舞吗！？.png" group-title="虎牙",朋友，和赵盼儿一起跳支舞吗！？
+http://159.75.85.63:35455/huya/11336590
+#EXTINF:-1 tvg-name="【十一推荐】动作要快，姿势要帅" tvg-logo="https://live.fanmingming.com/tv/【十一推荐】动作要快，姿势要帅.png" group-title="虎牙",【十一推荐】动作要快，姿势要帅
+http://159.75.85.63:35455/huya/11602041
+#EXTINF:-1 tvg-name="夜色对鲜血痴迷的追随" tvg-logo="https://live.fanmingming.com/tv/夜色对鲜血痴迷的追随.png" group-title="虎牙",夜色对鲜血痴迷的追随
+http://159.75.85.63:35455/huya/21059580
+#EXTINF:-1 tvg-name="刺激到不行的韩版犯罪片" tvg-logo="https://live.fanmingming.com/tv/刺激到不行的韩版犯罪片.png" group-title="虎牙",刺激到不行的韩版犯罪片
+http://159.75.85.63:35455/huya/11352974
+#EXTINF:-1 tvg-name="【许氏三杰】快来 就差你了" tvg-logo="https://live.fanmingming.com/tv/【许氏三杰】快来 就差你了.png" group-title="虎牙",【许氏三杰】快来 就差你了
+http://159.75.85.63:35455/huya/11602033
+#EXTINF:-1 tvg-name="独当一面的“钢铁战队”" tvg-logo="https://live.fanmingming.com/tv/独当一面的“钢铁战队”.png" group-title="虎牙",独当一面的“钢铁战队”
+http://159.75.85.63:35455/huya/11336578
+#EXTINF:-1 tvg-name="搞笑喜剧：最佳拍档 开心鬼系列" tvg-logo="https://live.fanmingming.com/tv/搞笑喜剧：最佳拍档 开心鬼系列.png" group-title="虎牙",搞笑喜剧：最佳拍档 开心鬼系列
+http://159.75.85.63:35455/huya/11342423
+#EXTINF:-1 tvg-name="世界柸·没比赛也能看电影" tvg-logo="https://live.fanmingming.com/tv/世界柸·没比赛也能看电影.png" group-title="虎牙",世界柸·没比赛也能看电影
+http://159.75.85.63:35455/huya/11352963
+#EXTINF:-1 tvg-name="海妖的呼唤：火之岛生存战" tvg-logo="https://live.fanmingming.com/tv/海妖的呼唤：火之岛生存战.png" group-title="虎牙",海妖的呼唤：火之岛生存战
+http://159.75.85.63:35455/huya/11602075
+#EXTINF:-1 tvg-name="国产悬疑精选·智商在线" tvg-logo="https://live.fanmingming.com/tv/国产悬疑精选·智商在线.png" group-title="虎牙",国产悬疑精选·智商在线
+http://159.75.85.63:35455/huya/11342395
+#EXTINF:-1 tvg-name="枪战还是得看他！" tvg-logo="https://live.fanmingming.com/tv/枪战还是得看他！.png" group-title="虎牙",枪战还是得看他！
+http://159.75.85.63:35455/huya/21059579
+#EXTINF:-1 tvg-name="动作电影来啦" tvg-logo="https://live.fanmingming.com/tv/动作电影来啦.png" group-title="虎牙",动作电影来啦
+http://159.75.85.63:35455/huya/11602077
+#EXTINF:-1 tvg-name="盗墓还得看经典的" tvg-logo="https://live.fanmingming.com/tv/盗墓还得看经典的.png" group-title="虎牙",盗墓还得看经典的
+http://159.75.85.63:35455/huya/21059552
+#EXTINF:-1 tvg-name="臣妾真的做不到啊！！" tvg-logo="https://live.fanmingming.com/tv/臣妾真的做不到啊！！.png" group-title="虎牙",臣妾真的做不到啊！！
+http://159.75.85.63:35455/huya/11352906
+#EXTINF:-1 tvg-name="永远怀念“黄药师”曾江" tvg-logo="https://live.fanmingming.com/tv/永远怀念“黄药师”曾江.png" group-title="虎牙",永远怀念“黄药师”曾江
+http://159.75.85.63:35455/huya/11601981
+#EXTINF:-1 tvg-name="牙缝多了根青菜的直播间" tvg-logo="https://live.fanmingming.com/tv/牙缝多了根青菜的直播间.png" group-title="虎牙",牙缝多了根青菜的直播间
+http://159.75.85.63:35455/huya/11352877
+#EXTINF:-1 tvg-name="那些年的香gang贺岁片" tvg-logo="https://live.fanmingming.com/tv/那些年的香gang贺岁片.png" group-title="虎牙",那些年的香gang贺岁片
+http://159.75.85.63:35455/huya/11601971
+#EXTINF:-1 tvg-name="我是大哥大  第九集" tvg-logo="https://live.fanmingming.com/tv/我是大哥大  第九集.png" group-title="虎牙",我是大哥大  第九集
+http://159.75.85.63:35455/huya/23652317
+#EXTINF:-1 tvg-name="可能是目前最好的篮球电影" tvg-logo="https://live.fanmingming.com/tv/可能是目前最好的篮球电影.png" group-title="虎牙",可能是目前最好的篮球电影
+http://159.75.85.63:35455/huya/21059586
 
 
 #EXTINF:-1 group-title="•韩国「KO」",TJB
