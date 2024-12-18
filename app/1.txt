@@ -262,7 +262,6 @@
  "lives":[
         {
             "name": "直播",
-            "name": "iptv6",
             "type": 0,
             "url": "https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt",
             "playerType": 1,
