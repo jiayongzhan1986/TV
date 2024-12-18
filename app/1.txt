@@ -1,0 +1,272 @@
+{
+    "spider": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/xiaoyii.jar;md5;0c1b445d169566cda344d6877ad76b43",
+    "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
+    "wallpaper": "https://深色壁纸.xxooo.cf/",
+    "sites": [ 
+    	{
+			"key": "csp_XSX",
+			"name": "🅱️️视讯",
+			"type": 3,
+			"searchable": 1,
+			"changeable": 1,
+			"quickSearch": 1,
+			"api": "csp_Xsx",
+			"playerType": 2,
+			"filterable": 1,
+			"ext": ""
+		},
+        {
+            "key": "荐片",
+            "name": "🅱️️荐片",
+            "api": "csp_Jianpian",
+            "type": 3,
+            "ext": "http://api2.rinhome.com"
+        },         
+        {
+            "key": "天天",
+            "name": "🅱️️天天",
+            "type": 3,
+            "api": "csp_TTian",
+            "ext": "baHR0cDovL29wLnlzZHFqcy5jbg==",
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E5%A4%A9%E5%A4%A9.jar"
+        },
+		{
+			"key": "csp_SuBaiBai",
+			"name": "🅱️️白白",
+			"type": 3,
+			"api": "csp_SuBaiBai",
+			"playerType": 2,
+			"ext": "https://subaibai.com/"
+		},        
+        {
+            "key": "csp_JPYY",
+            "name": "🅱️️文采",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_Jpyy",
+            "filterable": 1,
+            "ext": ""
+        },       
+		{
+			"key": "瓜子",
+			"name": "🅱️️瓜子",
+			"type": 3,
+			"api": "csp_Gz360",
+			"searchable": 1,
+			"quickSearch": 0,
+			"filterable": 1,
+			"order_num": 0,
+			"changeable": 0
+		},
+		{
+			"key": "csp_南瓜",
+			"name": "🅱️️南瓜",
+			"type": 3,
+			"api": "csp_MiTuApp",
+			"ext": "ewogICAgICAgICJ1cmwiOiAiaHR0cDovLzExMS4xODAuMjA2LjEyNzozMzAiLAogICAgICAgICJkYXRhS2V5IjogInZhM2hmNzkzbjNDRmR2RlMiLAogICAgICAgICJkYXRhSXYiOiAidmEzaGY3OTNuM0NGZHZGUyIsCiAgICAgICAgImRldmljZUlkIjogIjIzODEzYjE1YmY3YmQzNTljYjhkMzJmOWQwMjg2MjQ0YyIKICB9"
+		},
+		{
+			"key": "csp_MiTuApp",
+			"name": "🅱️️米兔",
+			"type": 3,
+			"api": "csp_MiTuApp",
+			"ext": "ewogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9reTEwODAudG9wIiwKICAgICAgICAiZGF0YUtleSI6ICJlNTlkNDRiMmVlZjAzYmEyIiwKICAgICAgICAiZGF0YUl2IjogImU1OWQ0NGIyZWVmMDNiYTIiLAogICAgICAgICJkZXZpY2VJZCI6ICIyMzgxM2IxNWJmN2JkMzU5Y2I4ZDMyZjlkMDI4NjI0NGMiCiAgfQ=="
+		},
+		{
+			"key": "csp_电影",
+			"name": "🅱️️电影",
+			"type": 3,
+			"api": "csp_MiTuApp",
+			"ext": "ewogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGlhcHBkeXl6dHZ5eWRzcXdkeS42OC5neTo1Njg5IiwKICAgICAgICAiZGF0YUtleSI6ICJkeXl6dHZhcGlhcHB5eWRzIiwKICAgICAgICAiZGF0YUl2IjogImR5eXp0dmFwaWFwcHl5ZHMiLAogICAgICAgICJkZXZpY2VJZCI6ICIyMzgxM2IxNWJmN2JkMzU5Y2I4ZDMyZjlkMDI4NjI0NGMiCiAgICAgIH0="
+		},
+		{
+            "key": "csp_zhufan",
+            "name": "🅱️️追饭",
+            "searchable": 1,
+            "quickSearch": 1,
+            "type": 3,
+            "api": "csp_MiTo",
+            "ext": {
+                "url": "http://103.88.35.251:8989",
+                "dataKey": "aassddwwxxllsx1x",
+                "playKey": "bbssqdbbssll25sx",
+                "version": "2.1.0"
+            }
+        },
+		{
+			"key": "csp_LiteApple",
+			"name": "🅱️️苹果",
+			"type": 3,
+			"searchable": 1,
+			"changeable": 1,
+			"api": "csp_LiteApple",
+			"playerType": 1,
+			"filterable": 1,
+			"ext": ""
+		},
+        {
+            "key": "csp_Dm84",
+            "name": "🅱️️动漫",
+            "type": 3,
+            "api": "csp_Dm84"
+        },
+        {
+            "key": "huohuo",
+            "name": "🅱️️火火",
+            "type": 3,
+            "changeable": 0,
+            "api": "csp_SaoHuo"
+        },
+        {
+            "key": "Bili",
+            "name": "🅱️B站",
+            "type": 3,
+            "api": "csp_Bili",
+            "style": {
+                "type": "rect",
+                "ratio": 0.755
+            },
+            "searchable": 1,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "https://d.kstore.dev/download/11529/Bili.json"
+        },
+        {
+            "key": "农民",
+            "name": "🅱️️️农民",
+            "type": 3,
+            "api": "csp_XYQHiker",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E6%97%A0%E6%9D%A1%E5%B9%85.jar",
+            "ext": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E5%86%9C%E6%B0%91%E5%BD%B1%E8%A7%86.json"
+        },        
+                                      {
+            "key": "FreeOK",
+            "name": "🅱️️️剧圈圈",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E6%97%A0%E6%9D%A1%E5%B9%85.jar",
+            "ext": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/FreeOK.json"
+        },
+        {
+            "key": "七新",
+            "name": "🅱️️️七新",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E6%97%A0%E6%9D%A1%E5%B9%85.jar",
+            "ext": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E4%B8%83%E6%96%B0.json"
+        },
+        {
+            "key": "非凡",
+            "name": "🅱️️️非凡",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E6%97%A0%E6%9D%A1%E5%B9%85.jar",
+            "ext": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E9%9D%9E%E5%87%A1.json"
+        },        
+        {
+            "key": "lumanman",
+            "name": "🅱️️️路漫漫",
+            "type": 3,
+            "api": "csp_XYQHiker",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E6%97%A0%E6%9D%A1%E5%B9%85.jar",
+            "ext": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E8%B7%AF%E6%BC%AB%E6%BC%AB.json"
+        },
+		{
+			"key": "csp_视觉",
+			"name": "🅱️️️视觉",
+			"type": 3,
+			"searchable": 1,
+			"changeable": 1,
+			"quickSearch": 1,
+			"api": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/shijue.py",
+			"playerType": 2,
+			"filterable": 1
+		},        
+        {
+            "key": "DRJS_虎牙",
+            "name": "🅱️️️虎牙直播",
+            "type": 3,
+            "api": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/api/drpy2.min.js",
+            "ext": "https://d.kstore.dev/download/11529/虎牙直播.js",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0
+        },
+        {
+            "key": "csp_wanou",
+            "name": "🧸玩偶┃4K4K",
+            "api": "csp_Wogg",
+            "type": 3,
+            "searchable": 1,
+            "timeout": 30,
+            "changeable": 0,
+            "ext": {
+                "site_urls": [
+                    "https://wogg.xxooo.cf/",
+                    "https://www.wogg.bf/",
+                    "https://www.wogg.net/"
+                ]
+            }
+        },
+        {
+            "key": "csp_zhizhen",
+            "name": "🌹至臻┃4K4K",
+            "type": 3,
+            "api": "csp_Duopan",
+            "changeable": 0,
+            "filterable": 1,
+            "ext": {
+                "site_urls": [
+                    "http://mpanso.com",
+                    "http://mihdr.top"
+                ]
+            }
+        },
+        {
+            "key": "米搜",
+            "name": "🌾米搜┃4K4K",
+            "type": 3,
+            "api": "csp_MiSou",
+            "changeable": 0
+        },
+        {
+            "key": "csp_FirstAid",
+            "name": "🍧急救┃教学",
+            "type": 3,
+            "api": "csp_FirstAid",
+            "searchable": 0,
+            "quickSearch": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 3.8
+            },
+            "gridview": "0-0-4.1"
+        }
+    ],
+ "lives":[
+        {"name":"自用","type":0,"url":"https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt","playerType":1},
+    	{
+			"name": "平台",
+			"type": 0,
+			"url": "https://tv.iill.top/m3u/Live",
+			"ua": "okhttp/3.15",
+			"playerType": 2
+		}
+    ]    
+}
