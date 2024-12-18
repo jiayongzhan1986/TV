@@ -260,13 +260,14 @@
         }
     ],
  "lives":[
-        {"name":"自用","type":0,"url":"https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt","playerType":1},
-    	{
-			"name": "平台",
-			"type": 0,
-			"url": "https://tv.iill.top/m3u/Live",
-			"ua": "okhttp/3.15",
-			"playerType": 2
-		}
+        {
+            "name": "直播",
+            "name": "iptv6",
+            "type": 0,
+            "url": "https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt",
+            "playerType": 1,
+            "epg": ""
+        },
+        {"name":"自用","type":0,"url":"https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt","playerType":1}
     ]    
 }
