@@ -3,6 +3,21 @@
     "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
     "wallpaper": "https://深色壁纸.xxooo.cf/",
     "sites": [ 
+        {
+            "key": "天天",
+            "name": "🅱️️天天",
+            "type": 3,
+            "api": "csp_TTian",
+            "ext": "baHR0cDovL29wLnlzZHFqcy5jbg==",
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E5%A4%A9%E5%A4%A9.jar"
+        },
+        {
+            "key": "荐片",
+            "name": "🅱️️荐片",
+            "api": "csp_Jianpian",
+            "type": 3,
+            "ext": "http://api2.rinhome.com"
+        },         
     	{
 			"key": "csp_XSX",
 			"name": "🅱️️视讯",
@@ -15,21 +30,6 @@
 			"filterable": 1,
 			"ext": ""
 		},
-        {
-            "key": "荐片",
-            "name": "🅱️️荐片",
-            "api": "csp_Jianpian",
-            "type": 3,
-            "ext": "http://api2.rinhome.com"
-        },         
-        {
-            "key": "天天",
-            "name": "🅱️️天天",
-            "type": 3,
-            "api": "csp_TTian",
-            "ext": "baHR0cDovL29wLnlzZHFqcy5jbg==",
-            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/%E5%A4%A9%E5%A4%A9.jar"
-        },
 		{
 			"key": "csp_SuBaiBai",
 			"name": "🅱️️白白",
@@ -267,6 +267,12 @@
             "playerType": 1,
             "epg": ""
         },
-        {"name":"自用","type":0,"url":"https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt","playerType":1}
-    ]    
+	{	
+            "name": "平台",
+	    "type": 0, 
+            "url": "https://tv.iill.top/m3u/Live",
+	    "ua": "okhttp/3.15",
+	    "playerType": 2
+	}  
+    ]
 }
