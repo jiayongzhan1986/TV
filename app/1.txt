@@ -109,6 +109,7 @@
             "key": "csp_Dm84",
             "name": "🅱️️动漫",
             "type": 3,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/xiaomi.jar",
             "api": "csp_Dm84"
         },
         {
@@ -130,6 +131,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "changeable": 0,
+            "jar": "https://gitee.com/jiayongzhan/CatVodSpider/raw/main/aps/xiaomi.jar",
             "ext": "https://d.kstore.dev/download/11529/Bili.json"
         },
         {
