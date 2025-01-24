@@ -265,15 +265,6 @@
         {
             "name": "直播",
             "type": 0,
-            "url": "https://d.kstore.dev/download/11529/6.txt",
-            "epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-            "logo": "https://live.fanmingming.cn/tv/{name}.png",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "AI直播",
-            "type": 0,
             "url": "https://gh.xxooo.cf/https://raw.githubusercontent.com/jiayongzhan1986/TV/refs/heads/release/app/6.txt",
             "epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
             "logo": "https://live.fanmingming.cn/tv/{name}.png",
